@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>block-layout-practise.html</title>
+	<style type="text/css">
+	    *{
+	    	padding: 0; 
+	    	margin: 0;
+	    }
+		#header{
+            background: black;
+            color: white;
+		}
+		.wraper{
+			width: 600px;
+			margin: 0 auto;
+		}
+		.content-one{
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		.list-box{
+			padding: 0;
+			margin: 0;
+		}
+		.list-box li{
+			width: 180px;
+			height: 40px;
+			line-height: 34px;
+			margin-right: 30px;
+			margin-bottom: 15px;
+			border: 3px solid;
+			box-sizing: border-box;
+			background: pink;
+			list-style: none;
+		}
+		.list-box li:hover{
+			background: red;
+		}
+		.list-box li:nth-child(n + 5){
+			margin-left: 210px;
+		}
+		.list-box li:nth-child(n + 9){
+			margin-left: 420px;
+		}
+		.list-box li:nth-child(4n + 5){
+			margin-top: -220px;
+		}
+		.list-test{
+            overflow: hidden;
+            margin-bottom: 20px;
+		}
+		.list-test li{
+			list-style: none;
+			padding-bottom: 1px;
+			border-bottom: 1px dotted;
+			margin-bottom: -1px;
+		}
+		#footer{
+			text-align: center;
+			background: violet;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div class="wraper">hello world 请调整浏览器窗口大小查看效果</div>
+	</div>
+	<div class="wraper">
+		<p class="content-one">
+			页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px
+		</p>
+		<ul class="list-box">
+			<li>宽180高40(包含边框)</li>
+			<li>水平间隙30px</li>
+			<li>垂直间隙15px</li>
+			<li>边框宽度3px</li>
+			<li>产品</li>
+			<li>产品</li>
+			<li>产品</li>
+			<li>产品</li>
+			<li>产品</li>
+			<li>产品</li>
+			<li>产品</li>
+			<li>产品</li>
+		</ul>
+		<ul class="list-test">
+			<li>link1</li>
+			<li>link2</li>
+			<li>link3</li>
+			<li>link4</li>
+			<li>link5</li>
+		</ul>
+	</div>
+	<div id="footer">
+		©版权所有 <br />本页所有布局均使用块元素
+	</div>
+</body>
+</html>
