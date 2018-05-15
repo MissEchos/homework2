@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>abs-center</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		body{
+			position: relative;
+		}
+		.center{
+			width: 100px;
+			height: 100px;
+			line-height: 100px;
+			text-align: center;
+			border: 2px solid;
+			background-color: pink;
+			margin-top: calc(50vh - 50px);
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.center-two{
+			width: 80px;
+			height: 80px;
+			line-height: 80px;
+			text-align: center;
+			border: 1px solid;
+			background-color: aqua;
+			position: absolute;
+			top: 50%;
+			margin-top: -40px;
+			margin-left: calc(50% - 40px);
+		}
+	</style>
+</head>
+<body>
+	<div class="center">居中显示</div>
+	<div class="center-two">居中显示</div>
+</body>
+</html>
