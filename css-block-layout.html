@@ -24,7 +24,7 @@
 			padding: 0;
 			margin: 0;
 		}
-		.list-box li{
+		.list-box span{
 			width: 180px;
 			height: 40px;
 			line-height: 34px;
@@ -33,25 +33,20 @@
 			border: 3px solid;
 			box-sizing: border-box;
 			background: pink;
-			list-style: none;
+            display: inline-block;
 		}
-		.list-box li:hover{
-			background: red;
+		.list-box span:hover{
+			background-color: red;
 		}
-		.list-box li:nth-child(n + 5){
-			margin-left: 210px;
+		.list-box span:nth-child(3n){
+			margin-right: 0;
+
 		}
-		.list-box li:nth-child(n + 9){
-			margin-left: 420px;
-		}
-		.list-box li:nth-child(4n + 5){
-			margin-top: -220px;
-		}
-		.list-test{
+		.list-link{
             overflow: hidden;
             margin-bottom: 20px;
 		}
-		.list-test li{
+		.list-link li{
 			list-style: none;
 			padding-bottom: 1px;
 			border-bottom: 1px dotted;
@@ -71,21 +66,10 @@
 		<p class="content-one">
 			页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px
 		</p>
-		<ul class="list-box">
-			<li>宽180高40(包含边框)</li>
-			<li>水平间隙30px</li>
-			<li>垂直间隙15px</li>
-			<li>边框宽度3px</li>
-			<li>产品</li>
-			<li>产品</li>
-			<li>产品</li>
-			<li>产品</li>
-			<li>产品</li>
-			<li>产品</li>
-			<li>产品</li>
-			<li>产品</li>
-		</ul>
-		<ul class="list-test">
+		<div class="list-box">
+			<span>宽180高40(包含边框)</span><span>水平间隙30px</span><span>垂直间隙15px</span><span>边框宽度3px</span><span>产品</span><span>产品</span><span>产品</span><span>产品</span><span>产品</span><span>产品</span><span>产品</span><span>产品</span>
+		</div>
+		<ul class="list-link">
 			<li>link1</li>
 			<li>link2</li>
 			<li>link3</li>
