@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Sprite</title>
+    <style type="text/css">
+ 
+        div{
+            width: 400px;
+            height: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-top: calc(50vh - 150px);
+            background-color: rgba(0,0,0,.1);
+        }
+        em{
+            height: 80px;
+            margin-bottom: 20px;
+            display: block;
+            background: url(nav_logo242_hr.png) no-repeat #fff;
+            background-position: 12px 4px;
+        }
+        i{
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+            background: url(nav_logo242_hr.png) no-repeat #fff;
+        }
+        .item1{
+            background-position: -184px -79px;
+        }
+        .item2{
+            background-position: 4px -178px;
+        }
+        .item3{
+            background-position: -301px -424px;
+        }
+        .item4{
+            background-position: -217px -456px;
+        }
+        .item5{
+            background-position: -88px -654px;
+        }
+        .item6{
+            background-position: top -655px right -274px;
+        }
+        .item7{
+            background-position: bottom -169px right -42px;
+        }
+        .item8{
+            background-position: bottom -133px left 2px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <em class="logo"></em>
+        <i class="item1"></i>
+        <i class="item2"></i>
+        <i class="item3"></i>
+        <i class="item4"></i>
+        <i class="item5"></i>
+        <i class="item6"></i>
+        <i class="item7"></i>
+        <i class="item8"></i>
+    </div>
+</body>
+</html>

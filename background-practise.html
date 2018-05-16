@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>background-practise</title>
+
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .car-hover{
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background-image: url(porsche-model2.png);
+            background-size: 200px auto;
+            background-color: #ccc;
+            background-repeat: no-repeat;
+            background-position: 100% 50%;
+            transition: background-position .5s;
+        }
+        .car-hover:hover{
+            background-position: 0 50%;
+        }
+        .car1,.car2,.car3,.car4,.car5,.car6{
+            height: 400px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .car1{
+            background-image: url(porsche-model0.png) ;
+        }
+        .car2{
+            background-image: url(porsche-model1.png) ;
+        }
+        .car3{
+            background-image: url(porsche-model2.png) ;
+        }
+        .car4{
+            background-image: url(porsche-model3.png) ;
+        }
+        .car5{
+            background-image: url(porsche-model4.png) ;
+        }
+        .car6{
+            background-image: url(porsche-model5.png) ;
+        }
+    </style>
+</head>
+<body>
+    <div class="car-hover"></div>
+    <div class="car1"></div>
+    <div class="car2"></div>
+    <div class="car3"></div>
+    <div class="car4"></div>
+    <div class="car5"></div>
+    <div class="car6"></div>
+</body>
+</html>
