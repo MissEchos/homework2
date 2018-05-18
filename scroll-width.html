@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算滚动条的宽度</title>
+    <style type="text/css">
+        *{
+            padding: 1px;
+            margin: 0;
+            background: rgba(0,0,0,.1);
+        }
+        /*html{
+            padding-left: calc(100vw - 100%);
+        }*/
+        body{
+            padding-left: calc(100vw - 100%);
+        }
+        p{
+            width: 400px;
+            margin: 1em auto;
+        }
+        p:not(:first-child){
+            display: none;
+        }
+        p:hover ~ p{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis voluptates harum, aut, illum veniam, quo dolore id voluptate consequatur labore molestias incidunt itaque odit non saepe qui perferendis natus sit?</p>
+    <p>Deserunt necessitatibus aperiam inventore autem perferendis sit, corporis. Maiores omnis facere, impedit molestiae dignissimos, saepe asperiores reiciendis! Excepturi praesentium, quos aspernatur nostrum? Dignissimos eveniet ullam, veritatis aliquam officia hic dolore.</p>
+    <p>Dolores reiciendis, placeat velit sunt sit repudiandae suscipit culpa pariatur perferendis accusantium quaerat, blanditiis maxime labore nihil recusandae fugit, ratione voluptatem. Odit qui culpa doloribus quibusdam beatae, nam totam deleniti!</p>
+    <p>Aut a praesentium temporibus similique, maxime magni, numquam omnis saepe illo porro nobis. Corporis doloribus ipsum, quaerat itaque. Magni odio quaerat sed, aliquam inventore qui sit deleniti esse delectus! Reprehenderit.</p>
+    <p>Animi, optio. Cumque sapiente minima libero eos accusamus aliquam in cum, numquam soluta quasi similique ratione necessitatibus iure. Maiores corporis ex nostrum tempora incidunt odio quaerat, vero quam omnis harum?</p>
+    <p>Animi, optio. Cumque sapiente minima libero eos accusamus aliquam in cum, numquam soluta quasi similique ratione necessitatibus iure. Maiores corporis ex nostrum tempora incidunt odio quaerat, vero quam omnis harum?</p>
+    <p>Animi, optio. Cumque sapiente minima libero eos accusamus aliquam in cum, numquam soluta quasi similique ratione necessitatibus iure. Maiores corporis ex nostrum tempora incidunt odio quaerat, vero quam omnis harum?</p>
+    <p>Animi, optio. Cumque sapiente minima libero eos accusamus aliquam in cum, numquam soluta quasi similique ratione necessitatibus iure. Maiores corporis ex nostrum tempora incidunt odio quaerat, vero quam omnis harum?</p>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪元素</title>
+    <style>
+        *{
+            background-color: rgba(0,0,0,.1);
+        }
+        div{
+            width: 150px;
+            height: 200px;
+            margin:10px;
+            position: relative;
+        }
+        div::before{
+            content: attr(prom-tip);
+            position: absolute;
+            background-color: green;
+            font-size: 13px;
+            color: white;
+            left:0;
+            right:0;
+            margin:auto;
+            width:50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div prom-tip="享8折">
+        伪元素除了要加一个content让它出现，其他时候跟其他元素一样，所有能够用到CSS上的属性它都可以用,它的出现也影响布局
+    </div>
+    <div prom-tip="享8折"></div>
+    <div prom-tip="享8折"></div>
+</body>
+</html>

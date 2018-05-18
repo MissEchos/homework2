@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>input-checkboxe</title>
+    <style>
+        *{
+            background-color:rgba(0,0,0,.1);
+        }
+        input{
+            display: none;
+        }
+        input + label{
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            border: 2px solid;
+            border-radius: 3px;
+            line-height: 15px;
+            text-align: center;
+            text-indent: -9999px;
+        }
+        input:checked + label{
+            text-indent: 0;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum <input type="checkbox" name="" id="gender"> <label for="gender">√</label>dolor sit amet.</p>
+</body>
+</html>
