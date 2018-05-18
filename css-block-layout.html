@@ -8,6 +8,12 @@
 	    	padding: 0; 
 	    	margin: 0;
 	    }
+	    .fix-fz{
+	    	font-size: 0;
+	    }
+	    .fix-fz *{
+	    	font-size: 16px;
+	    }
 		#header{
             background: black;
             color: white;
@@ -24,7 +30,7 @@
 			padding: 0;
 			margin: 0;
 		}
-		.list-box span{
+		.list-box li{
 			width: 180px;
 			height: 40px;
 			line-height: 34px;
@@ -35,10 +41,10 @@
 			background: pink;
             display: inline-block;
 		}
-		.list-box span:hover{
+		.list-box li:hover{
 			background-color: red;
 		}
-		.list-box span:nth-child(3n){
+		.list-box li:nth-child(3n){
 			margin-right: 0;
 
 		}
@@ -66,9 +72,20 @@
 		<p class="content-one">
 			页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px
 		</p>
-		<div class="list-box">
-			<span>宽180高40(包含边框)</span><span>水平间隙30px</span><span>垂直间隙15px</span><span>边框宽度3px</span><span>产品</span><span>产品</span><span>产品</span><span>产品</span><span>产品</span><span>产品</span><span>产品</span><span>产品</span>
-		</div>
+		<ul class="list-box fix-fz">
+			<li>宽180高40(包含边框)</li>
+			<li>水平间隙30px</li>
+			<li>垂直间隙15px</li>
+			<li>边框宽度3px</li>
+			<li>产品</li>
+			<li>产品</li>
+			<li>产品</li>
+			<li>产品</li>
+			<li>产品</li>
+			<li>产品</li>
+			<li>产品</li>
+			<li>产品</li>
+		</ul>
 		<ul class="list-link">
 			<li>link1</li>
 			<li>link2</li>
