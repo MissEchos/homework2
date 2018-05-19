@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS实现多级菜单</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        ul,li{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .nav-box{
+            height: 40px;
+            background: #222;
+        }
+        .nav{
+            width: 1000px;
+            margin: 0 auto;
+            list-style: none;
+        }
+        .nav li{
+            float: left;
+            line-height: 40px;
+        }
+        .nav li a{
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 0 30px;
+        }
+        .nav li a .arrow{
+            border-top: 5px solid #fff;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            vertical-align: middle;
+            margin-left: 5px;
+            display: inline-block;
+        }
+        .sub-nav{
+            display: none;
+            background: #333;
+        }
+        .nav li:hover .sub-nav {
+            display: block;
+        }
+        .sub-nav li{
+            height: 40px;
+            float: none;
+            position: relative;
+        }
+        .sub-nav li a{
+            display: block;
+            line-height: 40px;
+            color: #fff;
+            text-align: center;
+        }
+        .sub-nav li a:hover{
+            background: orange;
+
+        }
+        .sub-nav li ul{
+            display: none;
+            position: absolute;
+            background: #333;
+            top: 0;
+            left: 100%;
+        }
+        .sub-nav li:hover ul{
+            display: block;
+        }
+        .sub-nav li ul li a{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-box">
+        <ul class="nav">
+            <li><a href="#">首页</a></li>
+            <li>
+                <a href="#">HTML+CSS<i class="arrow"></i></a>
+                <ul class="sub-nav">
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a>
+                        <ul>
+                            <li><a href="#">CSS1</a></li>
+                            <li><a href="#">CSS2</a></li>
+                            <li><a href="#">CSS2.1</a></li>
+                            <li><a href="#">CSS3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">LESS</a></li>
+                    <li><a href="#">SCSS</a></li>
+                    <li><a href="#">HTML5</a></li>
+                    <li><a href="#">CSS3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Javascript<i class="arrow"></i></a>
+                <ul class="sub-nav">
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">LESS</a>
+                        <ul>
+                            <li><a href="#">CSS1</a></li>
+                            <li><a href="#">CSS2</a></li>
+                            <li><a href="#">CSS2.1</a></li>
+                            <li><a href="#">CSS3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">SCSS</a></li>
+                    <li><a href="#">HTML5</a></li>
+                    <li><a href="#">CSS3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">前端工具<i class="arrow"></i></a>
+                <ul class="sub-nav">
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">LESS</a></li>
+                    <li><a href="#">SCSS</a></li>
+                    <li><a href="#">HTML5</a>
+                        <ul>
+                            <li><a href="#">CSS1</a></li>
+                            <li><a href="#">CSS2</a></li>
+                            <li><a href="#">CSS2.1</a></li>
+                            <li><a href="#">CSS3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">CSS3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">前端资源<i class="arrow"></i></a>
+                <ul class="sub-nav">
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">LESS</a></li>
+                    <li><a href="#">SCSS</a></li>
+                    <li><a href="#">HTML5</a></li>
+                    <li><a href="#">CSS3</a>
+                        <ul>
+                            <li><a href="#">CSS1</a></li>
+                            <li><a href="#">CSS2</a></li>
+                            <li><a href="#">CSS2.1</a></li>
+                            <li><a href="#">CSS3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">标签</a></li>
+        </ul>
+    </div>
+</body>
+</html>

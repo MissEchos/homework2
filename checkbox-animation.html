@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用纯css实现ios系统的checkbox动画</title>
+    <style>
+        .center{
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            margin-top: calc(50vh - 100px);
+            box-sizing: border-box;
+            padding-top: 75px;
+            padding-left: 50px;
+        }
+        input{
+            display: none;
+        }
+        
+        .check-box{
+            width: 100px;
+            height: 50px;
+            background: #ddd;
+            border-radius: 50px;
+            display: block;
+            position: relative;
+            transition: background .3s;
+        }
+        .checkbox-btn{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50px;
+            height: 50px;
+            background: #fff;
+            border-radius: 50px;
+            box-shadow: 1px 1px 5px #ddd;
+            transition: left .3s;
+        }
+        input:checked + .check-box{
+            background: green;
+        }
+        input:checked + .check-box > .checkbox-btn{
+            top: 0;
+            left: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox" class="check-box">
+        <div class="checkbox-btn"></div>
+    </label>
+    </div>
+</body>
+</html>
