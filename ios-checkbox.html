@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter</title>
+    <style>
+        *{
+            background: rgba(0,0,0,.1);
+        }
+        input{
+            display: none;
+        }
+
+        input + label{
+            width:100px;
+            height: 100px;
+            cursor: pointer;
+            vertical-align: bottom;
+            display: inline-block;
+            background-image: url(web_heart_animation_edge.png);
+        }
+        input:checked + label{
+            background-position: -2800px 0;
+            transition: .5s steps(28);
+        }
+        
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="star">
+    <label for="star"></label>
+</body>
+</html>
