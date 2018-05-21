@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实现bootstrap的表格样式</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: rgba(0,0,0,.1);
+        }
+        div{
+            width: 600px;
+            margin: auto;
+            margin-bottom: 1rem;
+            background-color: #fff;
+        }
+        .table{
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 1rem;
+            background-color: transparent;
+            border-collapse: collapse;
+        }
+        .table th,.table td{
+            padding: .75rem;
+            vertical-align: top;
+            border-top: 1px solid #dee2e6;
+            text-align: left;
+        }
+        .table thead th{
+            vertical-align: bottom;
+            border-bottom: 2px solid #dee2e6;
+        }
+        .table-striped tbody tr:nth-of-type(odd){
+            background-color: rgba(0,0,0,.05);
+        }
+        .table-hover tbody tr:hover{
+            background-color: rgba(0,0,0,.075);
+        }
+        .table-bordered td,.table-bordered th{
+            border: 1px solid #dee2e6;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>02title</th>
+                    <th>03title</th>
+                    <th>04title</th>
+                    <th>05title</th>
+                    <th>06title</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <td>1content</td>
+                    <td>2content</td>
+                    <td>3content</td>
+                    <td>4content</td>
+                    <td>5content</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>1content</td>
+                    <td>2content</td>
+                    <td>3content</td>
+                    <td>4content</td>
+                    <td>5content</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>1content</td>
+                    <td>2content</td>
+                    <td>3content</td>
+                    <td>4content</td>
+                    <td>5content</td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td>1content</td>
+                    <td>2content</td>
+                    <td>3content</td>
+                    <td>4content</td>
+                    <td>5content</td>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <td>1content</td>
+                    <td>2content</td>
+                    <td>3content</td>
+                    <td>4content</td>
+                    <td>5content</td>
+                </tr>
+                <tr>
+                    <th>6</th>
+                    <td>1content</td>
+                    <td>2content</td>
+                    <td>3content</td>
+                    <td>4content</td>
+                    <td>5content</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>02title</th>
+                    <th>03title</th>
+                    <th>04title</th>
+                    <th>05title</th>
+                    <th>06title</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <td>1content</td>
+                    <td>2content</td>
+                    <td>3content</td>
+                    <td>4content</td>
+                    <td>5content</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>1content</td>
+                    <td>2content</td>
+                    <td>3content</td>
+                    <td>4content</td>
+                    <td>5content</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>1content</td>
+                    <td>2content</td>
+                    <td>3content</td>
+                    <td>4content</td>
+                    <td>5content</td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td>1content</td>
+                    <td>2content</td>
+                    <td>3content</td>
+                    <td>4content</td>
+                    <td>5content</td>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <td>1content</td>
+                    <td>2content</td>
+                    <td>3content</td>
+                    <td>4content</td>
+                    <td>5content</td>
+                </tr>
+                <tr>
+                    <th>6</th>
+                    <td>1content</td>
+                    <td>2content</td>
+                    <td>3content</td>
+                    <td>4content</td>
+                    <td>5content</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>02title</th>
+                    <th>03title</th>
+                    <th>04title</th>
+                    <th>05title</th>
+                    <th>06title</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <td>1content</td>
+                    <td>2content</td>
+                    <td>3content</td>
+                    <td>4content</td>
+                    <td>5content</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>1content</td>
+                    <td>2content</td>
+                    <td>3content</td>
+                    <td>4content</td>
+                    <td>5content</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>1content</td>
+                    <td>2content</td>
+                    <td>3content</td>
+                    <td>4content</td>
+                    <td>5content</td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td>1content</td>
+                    <td>2content</td>
+                    <td>3content</td>
+                    <td>4content</td>
+                    <td>5content</td>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <td>1content</td>
+                    <td>2content</td>
+                    <td>3content</td>
+                    <td>4content</td>
+                    <td>5content</td>
+                </tr>
+                <tr>
+                    <th>6</th>
+                    <td>1content</td>
+                    <td>2content</td>
+                    <td>3content</td>
+                    <td>4content</td>
+                    <td>5content</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>02title</th>
+                    <th>03title</th>
+                    <th>04title</th>
+                    <th>05title</th>
+                    <th>06title</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <td>1content</td>
+                    <td>2content</td>
+                    <td>3content</td>
+                    <td>4content</td>
+                    <td>5content</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>1content</td>
+                    <td>2content</td>
+                    <td>3content</td>
+                    <td>4content</td>
+                    <td>5content</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>1content</td>
+                    <td>2content</td>
+                    <td>3content</td>
+                    <td>4content</td>
+                    <td>5content</td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td>1content</td>
+                    <td>2content</td>
+                    <td>3content</td>
+                    <td>4content</td>
+                    <td>5content</td>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <td>1content</td>
+                    <td>2content</td>
+                    <td>3content</td>
+                    <td>4content</td>
+                    <td>5content</td>
+                </tr>
+                <tr>
+                    <th>6</th>
+                    <td>1content</td>
+                    <td>2content</td>
+                    <td>3content</td>
+                    <td>4content</td>
+                    <td>5content</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
