@@ -44,11 +44,46 @@
         .table-bordered td,.table-bordered th{
             border: 1px solid #dee2e6;
         }
-        
+        .input-box{
+            display: table;
+            border-collapse: collapse;
+            width: 600px;
+            margin-top: 10px;
+            border: 2px solid #333;
+            border-radius: 3px;
+        }
+        .input-prepend{
+            display: table-cell;
+            background: #ccc;
+            width: 1%;
+            padding: 0;
+            margin: 0;
+            border-right: 2px solid #333;
+            box-sizing: border-box;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+        .input-control{
+            display: table-cell;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            border: 0;
+            height: 32px;
+            box-sizing: border-box;
+            outline: none;
+            padding: 2px;
+        }
+        .input-control:focus{
+            box-shadow: 0 0 0 5px #63e4;
+        }
     </style>
 </head>
 <body>
-    
+    <div class="input-box">
+        <span class="input-prepend">@@@</span>
+        <input type="text" class="input-control">
+    </div>
     <div>
         <table class="table">
             <thead>
