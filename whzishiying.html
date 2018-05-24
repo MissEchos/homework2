@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2018 by anonymous (http://jsbin.com/jepadofoba/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>实现三栏等高自适应布局</title>
+<style id="jsbin-css">
+*{
+  background-color: rgba(0,0,0,.1);
+}
+section{
+  min-width: 500px;
+  border: 2px solid;
+  box-sizing: border-box;
+  display: table;
+}
+.s1,.s2,.s3{
+  min-height: 300px;
+  display: table-cell;
+}
+.s1{
+  width: 100px;
+  background-color: red;
+  border: 2px solid;
+}
+.s2{
+  background-color: tan;
+  border: 2px solid;
+}
+.s3{
+  width: 100px;
+  background-color: blue;
+  border: 2px solid;
+}
+
+</style>
+</head>
+<body>
+  <section>
+    <div class="s1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero inventore, repudiandae. Maiores soluta sunt veritatis consequatur, expedita ipsam. Illo nulla, accusantium doloremque sed cumque dicta similique quia tenetur magnam assumenda.</div>
+    <div class="s2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt modi, debitis. Ipsam maiores, magni aliquam molestias consequuntur nisi repellendus, amet ipsum facilis alias doloremque quasi enim, esse omnis modi ullam.</div>
+    <div class="s3">Lorem vcipsum d oldsfs fdsffafdsf  fdsa  fdsa  fdsa  fdsafafafafor sit amet, consectetur adipisicing elit. Id iste tempora eveniet ab fuga non illo amet sint, deleniti numquam suscipit, reprehenderit, laboriosam quaerat asperiores magni ullam. Harum, sint, facilis.</div>
+  </section>
+</body>
+</html>
