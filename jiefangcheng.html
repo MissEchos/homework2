@@ -82,23 +82,41 @@
 
     var delta = b * b - 4 * a * c;
     var s_delta = Math.sqrt(delta);
-    if(delta > 0){
+
+    if (delta > 0) {
         //有两个不同的根
         var x1 = (-b + s_delta) / (2 * a);
         var x2 = (-b - s_delta) / (2 * a);
 
         console.log(x1);
         console.log(x2);
-    }else{
+    } else {
+        //有一个根
         if (delta == 0) {
             var x = (-b + 0) / (2 * a);
 
             console.log(x);
-        }else{
+        } else {
+            //没有实数根
             if (delta < 0) {
                 console.log("没有实数根");
             }
         }
     }
     
+</script>
+
+<script type="text/javascript">
+    if (不平行) {
+        var x = (c * e - b * f) / (a * e - b * d)
+        var y = (d * c - a * f) / (d * b - a * e)
+        console.log(x)
+        console.log(y)
+    } else {
+        if (重合) {
+            console.log('有无穷解')
+        } else {
+            console.log('无解')
+        }
+    }
 </script>

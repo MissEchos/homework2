@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>画图</title>
+  <style>
+    canvas {
+      border: 2px solid #f0f;
+      display: block;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <canvas width="400" height="300"></canvas>
+</body>
+<script>
+  var cvs = document.querySelector('canvas')
+  var ctx = cvs.getContext('2d')
+
+  function dot(x, y, color = 'black') {
+    ctx.fillStyle = color
+    ctx.fillRect(x, y, 1, 1)
+  }
+</script>
+<script>
+  var height = 0;
+  var line
+
+  //直线
+  for (var n = 0; n < 400; n = n + 1) {
+    line = dot(n, 10, color = 'black')
+  }
+  
+  //虚线1
+  for (var n = 0; n < 400; n = n + 2) {
+    line = dot(n, 20, color = "black")
+  }
+
+  //虚线2
+  for (var n = 1; n < 400; n = n + 4) {
+    dot(n, 30, color = "black")
+    dot(n + 1, 30, color = "black")
+  }
+
+  //虚线3
+  for (var n = 1; n < 400; n = n + 5) {
+    dot(n, 40, color = "black")
+    dot(n + 1, 40, color = "black")
+    dot(n + 2, 40, color = "black")
+  }
+
+  //斜对角线
+  for ( var n = 0; n < 400; n = n + 1){
+    dot(n, 3 / 4 * n, color = "black")
+  }
+
+  //斜线
+  for ( var n = 0; n < 400; n = n + 1){
+    dot(n, n, color = "black")
+  }
+
+  //圆
+  var a = 100
+  var b = 100
+  var r = 50
+
+  for (var x = 0; x < 400; x = x + 1){
+  var y1 = b + Math.sqrt(r * r - (x - a) * (x - a))
+  var y2 = b - Math.sqrt(r * r - (x - a) * (x - a))
+    dot(x, y1, color = "black")
+    dot(x, y2, color = "black")
+  }
+
+  //矩形
+  for (var x = 150; x < 200; x = x + 1) {
+    dot(x, 150, color = "black")
+  }
+  for (var y = 150; y < 200; y = y + 1) {
+    dot(150, y, color = "black")
+  }
+
+
+</script>
+</html>

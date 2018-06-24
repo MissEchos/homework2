@@ -1,0 +1,161 @@
+<script type="x" id="ch0103/01">
+    var a = Number(prompt("a: "))
+    var b = Number(prompt("b: "))
+    console.log(a + b)
+</script>
+
+<script type="x" id="ch0103/02">
+    var a = Number(prompt("a: "))
+    var b = Number(prompt("b: "))
+    var c = Number(prompt("c: "))
+    console.log((a + b) * c)
+</script>
+
+<script type="x" id="ch0103/03">
+    var a = Number(prompt("a: "))
+    var b = Number(prompt("b: "))
+    var c = Number(prompt("c: "))
+    console.log(parseInt((a + b) / c))
+</script>
+
+<script type="x" id="ch0103/04">
+    var a = Number(prompt("a: "))
+    var b = Number(prompt("b: "))
+    var m = parseInt(a / b)
+    var n = a % b
+    console.log(m+ ' ' +n)
+</script>
+
+<script type="x" id="ch0103/05">
+    var a = Number(prompt("a: "))
+    var b = Number(prompt("b: "))
+    var c = a / b
+    var d = parseInt(a / b)
+    var m = c - d
+    console.log(m.toFixed(9))
+</script>
+
+<script type="x" id="ch0103/06">
+    var a = Number(prompt("a: "))
+    var b = Number(prompt("b: "))
+    var rate = (b / a) * 100
+    console.log(rate.toFixed(3) + '%')
+</script>
+
+<script type="x" id="ch0103/07">
+    var a = Number(prompt("a: "))
+    var b = Number(prompt("b: "))
+    var c = Number(prompt("c: "))
+    var d = Number(prompt("d: "))
+    var x = Number(prompt("x: "))
+    var f = a * x * x * x + b * x * x + c * x + d
+    console.log(f.toFixed(3))
+</script>
+
+<script type="x" id="ch0103/08">
+    var f = Number(prompt("f: "))
+    var c = 5 * (f-32) / 9
+    console.log(c.toFixed(5))
+</script>
+
+<script type="x" id="ch0103/09">
+    var r = Number(prompt("r: "))
+    var pi = 3.14159
+    console.log(2*r+ ' ' +(2*pi*r).toFixed(4)+ ' ' +(pi*r*r).toFixed(4))
+</script>
+
+<script type="x" id="ch0103/10">
+    var r1 = Number(prompt("r1: "))
+    var r2 = Number(prompt("r2: "))
+    var R = 1/(1/r1 + 1/r2)
+    console.log(R.toFixed(2))
+</script>
+
+<script type="x" id="ch0103/11">
+    var a = Number(prompt("a: "))
+    var b = Number(prompt("b: "))
+    var e = a % b
+    console.log(e.toFixed(4))
+</script>
+
+<script type="x" id="ch0103/12">
+    var r = Number(prompt("r: "))
+    var π = 3.14
+    var V=4/3*π*r*r*r
+    console.log(V.toFixed(2))
+</script>
+
+<script type="xtext/javascript" id="ch0103/13">
+    var n = parseInt(prompt("n: "))
+    var a = (n - (n % 100)) / 100 //取百位
+    var c = n % 10  //取个位
+    var b = (n % 100 - c) / 10 //取十位
+    var m = c * 100 + b * 10 + a
+    console.log(m)
+</script>
+<script type="xtext/javascript" id="ch0103/13">
+    var n = prompt("n: ");
+    console.log(n.charAt(2) + n.charAt(1) + n.charAt(0))
+</script>
+
+<script type="xtext/javascript" id="ch0103/14">
+    var h = parseInt(prompt("h: "));
+    var r = parseInt(prompt("r: "));
+    var Pi = 3.14159;
+    var V = (Pi * r * r * h) / 1000;
+    console.log(Math.ceil(20/V))
+</script>
+
+<script type="xtext/javascript" id="ch0103/15">
+    var n = parseInt(prompt("n: "));
+    var x = parseInt(prompt("x: "));
+    var y = parseInt(prompt("y: "));
+    console.log(Math.floor(n - y / x))
+</script>
+
+<script type="xtext/javascript" id="ch0103/16">
+    var Xa = parseInt(prompt("Xa: "));
+    var Ya = parseInt(prompt("Ya: "));
+    var Xb = parseInt(prompt("Xb: "));
+    var Yb = parseInt(prompt("Yb: "));
+    console.log((Math.sqrt((Xb - Xa) * (Xb - Xa) + (Yb - Ya) * (Yb - Ya))).toFixed(3))
+</script>
+
+<script type="xtext/javascript" id="ch0103/17">
+    var x1 = parseInt(prompt("x1: "));
+    var y1 = parseInt(prompt("y1: "));
+    var x2 = parseInt(prompt("x2: "));
+    var y2 = parseInt(prompt("y2: "));
+    var x3 = parseInt(prompt("x3: "));
+    var y3 = parseInt(prompt("y3: "));
+    var a = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+    var c = Math.sqrt((x3 - x1) * (x3 - x1) + (y3 - y1) * (y3 - y1));
+    var b = Math.sqrt((x3 - x2) * (x3 - x2) + (y3 - y2) * (y3 - y2));
+    var p = (a + b + c) / 2;
+    var s = (Math.sqrt(p*(p-a)*(p-b)*(p-c))).toFixed(2);
+    console.log(s)
+</script>
+
+<script type="xtext/javascript" id="ch0103/18">
+    var a1 = parseInt(prompt("a1: "));
+    var a2 = parseInt(prompt("a2: "));
+    var n = parseInt(prompt("n: "))
+    var d = a2 - a1;
+    var an = a1 + (n - 1) * d;
+    console.log(an)
+</script>
+
+<script type="xtext/javascript" id="ch0103/19">
+    var a = parseInt(prompt("a: "));
+    var b = parseInt(prompt("b: "));
+    console.log(a * b)
+</script>
+
+<script type="text/javascript" id="ch0103/20">
+    var n = parseInt(prompt("n: "));
+    var num = 1
+    for (var i = 0; i < n; i++) {
+        num *= 2
+    }
+    console.log(num)
+</script>
