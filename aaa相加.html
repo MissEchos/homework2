@@ -1,0 +1,20 @@
+<script type="text/javascript">
+    //题目：求s=a+aa+aaa+aaaa+aa...a的值，其中a是一个数字。例如2+22+222+2222+22222(此时共有5个数相加)，具体有几个数相加有通过输入或者函数的实际参数决定。
+
+    //n = 2 + 22 + 222 + 2222 + 22222
+    debugger
+    var a = 5
+
+    var num = 1
+    var result = 0
+
+    for (var i = 1; i < 5; i++) {
+        num = String.fromCharCode(num + 48)
+        console.log(num)
+        result = result + num
+
+    }
+    console.log(result)
+    console.log(Math.round(1.4))
+    console.log(Math.round(1.6))
+</script>

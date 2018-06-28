@@ -1,0 +1,12 @@
+<script type="text/javascript">
+    debugger
+    var n = 100 
+    var sum = ''
+    var digit
+    while (n > 0) {
+        digit = n % 7
+        sum += String.fromCharCode(digit + 48)
+        n = (n - digit) / 7
+    }
+    console.log(sum)
+</script>

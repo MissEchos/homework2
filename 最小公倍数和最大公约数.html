@@ -1,0 +1,22 @@
+<script comment="最小公倍数和最大公约数">
+    debugger
+    var m = 15
+    var n = 12
+    var min = m > n ? n : m
+    for (var i = min; i > 0; i--) {
+        if (n % i === 0 && m % i === 0){
+            console.log(i)
+            break
+        }
+
+    }
+
+    var max = m < n ? n : m
+    for (var i = max; ; i++) {
+        if (i % m === 0 && i % n === 0) {
+            console.log(i)
+            break
+        }
+    }
+    
+</script>

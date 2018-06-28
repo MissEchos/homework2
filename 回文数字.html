@@ -1,0 +1,20 @@
+<script type="text/javascript">
+    var n = Number(prompt("n:"))
+    var digit
+    var result1 = ''
+    var result2 = ''
+
+    while (n > 0) {
+        digit = n % 10
+        result1 = String.fromCharCode(digit + 48) + result1
+        result2 = result2 + String.fromCharCode(digit + 48) 
+        n = (n - digit) / 10
+    }
+
+    if (result1 == result2) {
+        console.log("YES")
+    } else {
+        console.log("NO")
+    }
+
+</script>

@@ -29,57 +29,122 @@
 
   //直线
   for (var n = 0; n < 400; n = n + 1) {
-    line = dot(n, 10, color = 'black')
+    dot(n, 10, 'hsl(' + n + ', 80%, 80%)')
   }
   
   //虚线1
   for (var n = 0; n < 400; n = n + 2) {
-    line = dot(n, 20, color = "black")
+    dot(n, 20, "black")
   }
 
   //虚线2
   for (var n = 1; n < 400; n = n + 4) {
-    dot(n, 30, color = "black")
-    dot(n + 1, 30, color = "black")
+    dot(n, 30, "black")
+    dot(n + 1, 30, "black")
   }
 
   //虚线3
-  for (var n = 1; n < 400; n = n + 5) {
-    dot(n, 40, color = "black")
-    dot(n + 1, 40, color = "black")
-    dot(n + 2, 40, color = "black")
+  // for (var n = 1; n < 400; n = n + 5) {
+  //   dot(n, 40, "black")
+  //   dot(n + 1, 40, "black")
+  //   dot(n + 2, 40, "black")
+  // }
+
+  //虚线3
+  for (var n = 0; n < 400; n++) {
+    if (n % 5 < 3) {
+      dot(n, 40)
+    }
+    
   }
 
-  //斜对角线
-  for ( var n = 0; n < 400; n = n + 1){
-    dot(n, 3 / 4 * n, color = "black")
+  //虚线4
+  for (var n = 0; n < 400; n++) {
+    if (n % 15 < 4) {
+      dot(n, 50)
+    } else if (n % 15 < 12){
+      dot(n, 50, 'red')
+    } 
+  }
+
+  //斜对角线1
+  // for ( var n = 0; n < 400; n = n + 0.1){
+  //   y = 3 / 4 * n
+  //   dot(n, y, "black")
+  // }
+
+  //斜对角线2
+  var x = 0
+  var y = 0
+  while (x < 400) {
+    dot(x,y)
+    x += 1
+    y += 0.75
+  }
+
+  //楼梯
+  for ( var x = 0; x < 400; x = x + 0.1){
+    var y = parseInt(x)
+    dot(x * 10, y * 10, "black")
   }
 
   //斜线
   for ( var n = 0; n < 400; n = n + 1){
-    dot(n, n, color = "black")
+    dot(n, n, "black")
+    dot(n+1, n, "black")
   }
 
   //圆
-  var a = 100
-  var b = 100
+  //var a = 100
+  //var b = 100
+  //var r = 50
+
+  // for (var x = 0; x < 400; x = x + 1){
+  // var y1 = b + Math.sqrt(r * r - (x - a) * (x - a))
+  // var y2 = b - Math.sqrt(r * r - (x - a) * (x - a))
+  //   dot(x, y1, "black")
+  //   dot(x, y2, "black")
+  // }
+
+  //圆
   var r = 50
-
-  for (var x = 0; x < 400; x = x + 1){
-  var y1 = b + Math.sqrt(r * r - (x - a) * (x - a))
-  var y2 = b - Math.sqrt(r * r - (x - a) * (x - a))
-    dot(x, y1, color = "black")
-    dot(x, y2, color = "black")
+  for (var theta = 0; theta < 6.28; theta += 0.01) {
+    var x = r * Math.sin(theta) + 100
+    var y = r * Math.cos(theta) + 102
+    dot(x, y)
   }
 
-  //矩形
+  //黑色矩形
   for (var x = 150; x < 200; x = x + 1) {
-    dot(x, 150, color = "black")
-  }
-  for (var y = 150; y < 200; y = y + 1) {
-    dot(150, y, color = "black")
+    for (var y = 150; y < 200; y = y + 1) {
+      dot(x, y, "black")
+    }
   }
 
+  //彩色矩形
+  for (var x = 200; x < 250; x = x + 1) {
+    for (var y = 200; y < 250; y = y + 1) {
+      dot(x, y, 'hsl('+ (x * 3 + y) +', 100%, 70%)')
+    }
+  }
+  
+  // for (var g = 255; g >= 0; g--) {
+  //   for (var b = 0; b < 256; b++) {
+  //     var x = b / 4 + 300
+  //     var y = g / 4 + 80
+  //     color = "rgb(255, " + g + ", "+ b +")"
+  //     dot(x, y, color)
+  //   }
+  // }
+  
+  for (var y = 100; y < 150; y++) {
+    for (var x = 300; x < 350; x++) {
+      var g = (y-100)/50*256
+      var b = (x-300)/50*256
+      var color = 'rgb(255,'+ g +','+ b +')'
+      dot(x,y,color)
+    }
+  }
 
 </script>
 </html>

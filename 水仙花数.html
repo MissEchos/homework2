@@ -1,0 +1,68 @@
+<!-- <script>
+  debugger
+
+  var n = 153
+  var x = n
+  var digit
+  var width = 0
+
+  do {
+    digit = x % 10
+    x = (x - digit) / 10
+    width++
+  } while (x > 0)
+
+  x = n
+
+  var sum = 0
+
+  do {
+    digit = x % 10
+    var dw = 1
+    for(var i = 0; i < width; i++) {
+      dw *= digit
+    }
+    // dw=digit**width
+    sum += dw
+    x = (x - digit) / 10
+  } while (x > 0)
+
+
+  if (sum === n) {
+    console.log(true)
+  } else {
+    console.log(false)
+  }
+
+</script> -->
+<script type="text/javascript">
+  var n = 153
+  var digit
+  var width = 0
+  x = n
+
+  do {
+    digit = x % 10
+    x = (x - digit) / 10
+    width++
+  } while (x > 0)
+
+  var sum = 0
+  x = n
+  
+  do {
+    digit = x % 10
+    var dw = 1
+    for (var i = 0; i < width; i++) {
+      dw *= digit
+    }
+    sum += dw
+    x = (x - digit) / 10
+  } while (x > 0)
+  if (sum === n) {
+    console.log('true')
+  } else {
+    console.log ('false')
+  }
+
+</script>
